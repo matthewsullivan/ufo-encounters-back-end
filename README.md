@@ -11,7 +11,7 @@ Open terminal at project root and execute
 
 Set origin (client) URL
 
-    $ export URL_ORIGIN='http://127.0.0.1:8081'
+    $ export URL_ORIGIN='http://127.0.0.1:3000'
 
 ## Setup
 
@@ -26,3 +26,7 @@ Initialize and seed database
 ## Serve
 
     $ export npm run start
+
+## Example
+
+    127.0.0.1/api/v1/encounters

@@ -8,9 +8,9 @@ const encounterController = require(path.resolve(
 router
   .del('/api/v1/encounters/:id', encounterController.deleteEncounter)
 
-  .get('/api/v1/encounter', encounterController.getEncounters)
-  .get('/api/v1/encounter/:id', encounterController.getEncounter)
-  .get('/api/v1/encounter/name/:name',encounterController.getEncounterByName)
+  .get('/api/v1/encounters', encounterController.getEncounters)
+  .get('/api/v1/encounters/:id', encounterController.getEncounter)
+  .get('/api/v1/encounters/name/:name',encounterController.getEncounterByName)
 
   .post('/api/v1/encounter', encounterController.createEncounter)
 

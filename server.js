@@ -29,7 +29,7 @@ if (!module.parent) {
 }
 
 console.log(`\nufo-encounters-back-end`);
-console.log(`Path: 127.0.0.1:8081`);
+console.log(`Path: 127.0.0.1:3000`);
 console.log(`${new Date().toString()}\n`);
 
 module.exports = app;
