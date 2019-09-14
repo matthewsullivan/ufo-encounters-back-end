@@ -40,5 +40,13 @@
     "start": "NODE_ENV=development && npm init -f && nodemon server.js"
   },
   "version": "1.0.0",
-  "keywords": []
+  "keywords": [],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/matthewsullivan/ufo-encounters-back-end.git"
+  },
+  "bugs": {
+    "url": "https://github.com/matthewsullivan/ufo-encounters-back-end/issues"
+  },
+  "homepage": "https://github.com/matthewsullivan/ufo-encounters-back-end#readme"
 }
