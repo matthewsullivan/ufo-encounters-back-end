@@ -1,5 +1,10 @@
 {
   "author": "Matthew Sullivan",
+  "config": {
+    "db": {
+      "database": "ufo_encounters"
+    }
+  },
   "dependencies": {
     "acl": "^0.4.10",
     "apollo-datasource-rest": "^0.6.4",

@@ -24,8 +24,8 @@ const seed = (() => {
 
     for (const encounter of encounters) {
       ctx.request.body = encounter;
-
-      await encounterController.createEncounter(encounter);
+      
+      await encounterController.createEncounter(ctx);
     }
   };
 

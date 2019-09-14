@@ -12,7 +12,7 @@ CREATE TABLE public.encounters
   latitude numeric NOT NULL,
   longitude numeric NOT NULL,
   shape varchar(256) NOT NULL,
-  state varchar(256) NOT NULL
+  state varchar(256) NOT NULL,
   created timestamptz default now() NOT NULL,
   updated timestamptz default now() NOT NULL
 );

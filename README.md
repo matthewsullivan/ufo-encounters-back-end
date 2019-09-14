@@ -18,6 +18,7 @@ Set origin (client) URL
 Create PostgreSQL database
 
     $ ufo_encounters
+
 Initialize and seed database
 
     $ npm run db-init

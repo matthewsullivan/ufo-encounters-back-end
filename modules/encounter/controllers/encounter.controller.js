@@ -12,7 +12,7 @@ module.exports = {
    */
   createEncounter: async (ctx) => {
     const encounter = ctx.request.body;
-    const result = await encounterService.creatEncounter(encounter);
+    const result = await encounterService.createEncounter(encounter);
 
     if (result.rowCount) {
       ctx.status = 201;

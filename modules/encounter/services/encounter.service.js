@@ -11,7 +11,7 @@ module.exports = {
    */
   createEncounter: (encounter) => { 
     const statement = sql`
-      INSERT INTO public.encounter (
+      INSERT INTO public.encounters (
         city,
         comments,
         country,
@@ -21,7 +21,7 @@ module.exports = {
         latitude,
         longitude,
         shape,
-        state,
+        state
       )
       VALUES (
         ${encounter.city}, 
@@ -48,7 +48,7 @@ module.exports = {
    */
   deleteEncounter: (encounterId) => {
     const statement = sql`
-      DELETE FROM public.encounter
+      DELETE FROM public.encounters
       WHERE id = ${encounterId}
       RETURNING id;
     `;
@@ -64,7 +64,7 @@ module.exports = {
   getEncounterById: (encounterId) => {
     const statement = sql`
       SELECT *
-      FROM public.encounter
+      FROM public.encounters
       WHERE id = ${encounterId};
     `;
 
@@ -79,7 +79,7 @@ module.exports = {
   getEncounterByName: (name) => {
     const statement = sql`
       SELECT *
-      FROM public.encounter
+      FROM public.encounters
       WHERE name = ${name};
     `;
 
@@ -102,7 +102,7 @@ module.exports = {
   ) => {
     const statement = sql`
       SELECT *
-      FROM public.encounter
+      FROM public.encounters
     `.append(
       _raw`
         ORDER BY "${column}" ${direction} 
