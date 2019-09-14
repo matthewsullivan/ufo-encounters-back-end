@@ -1,0 +1,44 @@
+{
+  "author": "Matthew Sullivan",
+  "dependencies": {
+    "acl": "^0.4.10",
+    "apollo-datasource-rest": "^0.6.4",
+    "express": "^4.17.1",
+    "express-graphql": "^0.9.0",
+    "glob": "^7.1.2",
+    "graphql": "^14.5.4",
+    "kcors": "^2.2.1",
+    "koa": "^2.2.0",
+    "koa-body": "^2.3.0",
+    "koa-passport": "^3.0.0",
+    "koa-router": "^7.0.1",
+    "koa-session": "^5.0",
+    "koa-sslify": "^2.1.2",
+    "koa-static": "^4.0.2",
+    "pg": "^7.4.0",
+    "pg-extra": "^0.1.1",
+    "shortid": "^2.2.8"
+  },
+  "description": "UFO Encounter API",
+  "devDependencies": {
+    "babel-eslint": "^10.0.1",
+    "eslint": "^5.13.0",
+    "eslint-config-google": "^0.12.0",
+    "eslint-config-prettier": "^4.0.0",
+    "eslint-plugin-prettier": "^3.0.1",
+    "nodemon": "^1.19.1",
+    "prettier": "^1.16.4"
+  },
+  "license": "MIT",
+  "main": "index.js",
+  "name": "ufo-sightings-back-end",
+  "scripts": {
+    "db-indexes": "find modules/*/models/indexes -name *.sql -exec psql -d $npm_package_config_db_database -U postgres -h localhost -f {} \\;",
+    "db-init": "npm init -f && npm run -s db-tables && npm run -s db-indexes && npm run -s && npm run -s db-seed",
+    "db-tables": "find modules/*/models/tables -name *.sql -exec psql -d $npm_package_config_db_database -U postgres -h localhost -f {} \\;",
+    "db-seed": "node ./config/lib/seed/seed.js",
+    "start": "NODE_ENV=development && npm init -f && nodemon server.js"
+  },
+  "version": "1.0.0",
+  "keywords": []
+}
