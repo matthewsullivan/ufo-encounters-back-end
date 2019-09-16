@@ -25,7 +25,7 @@ Initialize and seed database
 
 ## Serve
 
-    $ export npm run start
+    $ npm run start
 
 ## Example
 

@@ -41,7 +41,11 @@
     "start": "npm init -f && nodemon server.js"
   },
   "version": "1.0.0",
-  "keywords": ["api", "koa", "ufo"],
+  "keywords": [
+    "api",
+    "koa",
+    "ufo"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/matthewsullivan/ufo-encounters-back-end.git"
