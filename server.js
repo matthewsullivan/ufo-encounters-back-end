@@ -9,7 +9,7 @@ const path = require('path');
 
 const config = require(path.resolve('./config/env/default'));
 const origin = process.env.URL_ORIGIN;
-const whitelist = origin ? origin.split(' ').join(' || ') : 'http://localhost:3001';
+const whitelist = origin ? origin.split(' ').join(' || ') : 'http://localhost:4000';
 
 const corsOptions = {
   credentials: true,
