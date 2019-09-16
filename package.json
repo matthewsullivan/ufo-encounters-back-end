@@ -38,10 +38,10 @@
     "db-init": "npm init -f && npm run -s db-tables && npm run -s db-indexes && npm run -s && npm run -s db-seed",
     "db-tables": "find modules/*/models/tables -name *.sql -exec psql -d $npm_package_config_db_database -U postgres -h localhost -f {} \\;",
     "db-seed": "node ./config/lib/seed/seed.js",
-    "start": "NODE_ENV=development && npm init -f && nodemon server.js"
+    "start": "npm init -f && nodemon server.js"
   },
   "version": "1.0.0",
-  "keywords": [],
+  "keywords": ["api", "koa", "ufo"],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/matthewsullivan/ufo-encounters-back-end.git"
