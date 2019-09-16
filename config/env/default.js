@@ -1,8 +1,6 @@
 const path = require('path');
 const process = require('process');
 
-const environment = require(path.resolve('./config/env/development.js'));
-
 const mainConfig = {
   db: {
     database: process.env.DB_DATABASE || 'ufo_encounters',
@@ -22,6 +20,6 @@ const mainConfig = {
   },
 };
 
-const config = Object.assign(mainConfig, environment);
+const config = Object.assign(mainConfig);
 
 module.exports = config;
