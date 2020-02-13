@@ -24,8 +24,6 @@ const corsOptions = {
 function getOrigin(ctx) {
   const origin = ctx.accept.headers.origin;
 
-  console.log(whitelist);
-
   if (!whitelist.includes(origin)) {
     return ctx.throw(`${origin} is not a valid origin`);
   }
