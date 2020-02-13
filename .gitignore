@@ -6,6 +6,9 @@ Thumbs.db
 # Node and related ecosystem
 node_modules/
 
+# Seed
+encounters.prod.json
+
 # General
 *.env
 *.log
